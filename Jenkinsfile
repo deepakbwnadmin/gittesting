@@ -5,9 +5,9 @@ pipeline {
 agent any
     // Build stages:
     stages {
-			stage('Copy repo to /data') {
+			stage('Copy contents') {
             steps {
-                sh "cp -r /root/pipelinetest /root/jenkins"
+                sh "cp -r /root/pipelinetest /tmp/jenkins"
             		}
     		}
 	}
