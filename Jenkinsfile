@@ -1,4 +1,8 @@
 pipeline {
+
+
+
+agent any
     
     // Variables:
     environment {
