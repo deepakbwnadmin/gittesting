@@ -7,7 +7,7 @@ agent any
     stages {
 			stage('Copy repo to /data') {
             steps {
-                sh "cp -r /root/pipelinetest /data/"
+                sh "cp -r /root/pipelinetest /root/jenkins"
             		}
     		}
 	}
