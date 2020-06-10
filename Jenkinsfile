@@ -7,7 +7,9 @@ agent any
     stages {
 			stage('Copy contents') {
             steps {
-                sh "cp -r /root/pipelinetest /tmp/jenkins"
+		sh "rm -rf /tmp/jenkins/*"
+		sleep 20
+                sh "cp -rf /tmp/pipelinetest /tmp/jenkins"
             		}
     		}
 	}
