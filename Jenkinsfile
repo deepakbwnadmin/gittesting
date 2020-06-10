@@ -39,11 +39,11 @@ agent any
 
                 }
             }
-        }
-
-        stage('Copy repo to /data') {
+stage('Copy repo to /data') {
             steps {
                 sh "cp -r /root/pipelinetest /data/"
             }
-        }        
+        }
+        }
+
     }
