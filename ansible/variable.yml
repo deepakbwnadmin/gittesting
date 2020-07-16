@@ -1,8 +1,10 @@
 ---
 - hosts: all
   vars:
-  name: niranjan
+  name:
+   - Vasudevamurthy
+   - Niranjan
   tasks:
-  - name: Ansible Basic Variable Example
+  - name: Ansible Array Example
     debug:
-     msg: "{{ name }}"
+    msg: "{{ name[1] }}"
