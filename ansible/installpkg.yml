@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: install git on the client machines
+    yum: name=git state=latest
