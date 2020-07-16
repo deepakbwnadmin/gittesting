@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  tasks:
+  - name: create multiple directories
+  file: path={{items}} state directory
+  with_items:
+  - '/home/ansible/vn1'
+  - '/home/ansible/vn2'
+  - '/home/ansible/vn3'
