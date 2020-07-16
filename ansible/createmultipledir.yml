@@ -2,9 +2,5 @@
 - hosts: webservers
   become: true
   tasks:
-  - name: Create multiple directories
-  file: path={{item}} state=directory
-  with_items:
-  - '/home/ansible/vn1'
-  - '/home/ansible/vn2'
-  - '/home/ansible/vn3'
+  - name: Create User
+    user: name=niranjan password=niranjan groups=ansible shell=/bin/bash
